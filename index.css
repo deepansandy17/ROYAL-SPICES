@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300..800&family=Space+Grotesk:wght@300..700&family=JetBrains+Mono:wght@400..700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-gold: #D4AF37;
+  --color-gold-light: #F3E5AB;
+  --color-gold-dark: #AA820A;
+  --color-luxury-red: #8B0000;
+  --color-luxury-red-dark: #5A0000;
+  --color-luxury-black: #0E0E0E;
+  --color-luxury-charcoal: #1A1A1A;
+  --color-luxury-cream: #FAF9F6;
+}
+
+@layer utilities {
+  .gold-gradient {
+    background: linear-gradient(135deg, #FAF0D7 0%, #D4AF37 50%, #AA820A 100%);
+  }
+  .gold-text-gradient {
+    background: linear-gradient(135deg, #FFF0D0 0%, #D4AF37 50%, #AA820A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .dark-luxury-gradient {
+    background: linear-gradient(180deg, #121212 0%, #0E0E0E 100%);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #121212;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #AA820A;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #0E0E0E;
+  color: #FAF9F6;
+  overflow-x: hidden;
+}
