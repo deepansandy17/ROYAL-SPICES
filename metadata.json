@@ -1,0 +1,6 @@
+{
+  "name": "Royal Spice Restaurant",
+  "description": "A premium, luxury dining experience serving authentic Indian, Chinese, and Italian cuisines with online ordering and reservations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
